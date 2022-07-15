@@ -3,9 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#0091ff" />
+
+
     <com.sws.study.customview.view.ClipImageView
         android:id="@+id/iv_clip"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

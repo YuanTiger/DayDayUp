@@ -28,7 +28,4 @@ val Int.dp: Int
         Resources.getSystem().displayMetrics
     ).toInt()
 
-fun ComponentActivity.router(className: Class<*>) {
-    val intent = Intent(this, className)
-    startActivity(intent)
-}
+
