@@ -6,14 +6,14 @@
 
 
     <Button
-        android:id="@+id/bt_custom_view"
+        android:id="@+id/bt_clip"
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_marginStart="42dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="42dp"
         android:background="@drawable/bg_ffcc45_r12"
-        android:text="@string/custom_view"
+        android:text="@string/clip"
         android:textAllCaps="false"
         android:textColor="@color/c_242323"
         android:textSize="14sp"

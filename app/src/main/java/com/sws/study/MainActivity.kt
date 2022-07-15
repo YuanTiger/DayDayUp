@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.ComponentActivity
 import com.sws.study.customview.activity.CustomViewHomeActivity
+import com.sws.study.utils.router
 
 /**
  * @author mengyuan
@@ -27,8 +28,7 @@ class MainActivity : ComponentActivity(), View.OnClickListener {
         val id = view?.id ?: 0
         //自定义View
         if (id == R.id.bt_custom_view) {
-            val intent = Intent(this, CustomViewHomeActivity::class.java)
-            startActivity(intent)
+            router(CustomViewHomeActivity::class.java)
         }
     }
 

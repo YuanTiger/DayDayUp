@@ -25,7 +25,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.sws.study.customview.activity.CustomViewHomeActivity" />
+        <activity android:name=".customview.activity.CustomViewHomeActivity" />
+        <activity android:name=".customview.activity.ClipHomeActivity" />
     </application>
 
 </manifest>
