@@ -70,11 +70,13 @@ class ClipImageView @JvmOverloads constructor(
         //该区域为显示区域，该区域外的任何ui都不会显示
 //        canvas?.clipPath(path)
         //只能裁剪一块区域，如果裁剪两块区域，则什么都不会显示
+//        canvas?.clipRect(rectF)
+        //裁剪+反选
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             canvas?.clipOutRect(rectF)
         }
 
-        canvas?.drawRect(0f,0f, width.toFloat(), height.toFloat(),paint)
+        canvas?.drawRect(0f, 0f, width.toFloat(), height.toFloat(), paint)
     }
 
 
