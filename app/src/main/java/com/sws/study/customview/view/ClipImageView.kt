@@ -49,6 +49,7 @@ class ClipImageView @JvmOverloads constructor(
     init {
         paint.color = ContextCompat.getColor(context, R.color.c_80000000)
         paint.strokeWidth = 2F.dp
+        paint.isAntiAlias = true
         path.addRect(rectF, Path.Direction.CW)
         rectFRadiusX = (rectF.right - rectF.left) / 2
         Log.i(TAG, "rectFRadiusX:${rectFRadiusX}")

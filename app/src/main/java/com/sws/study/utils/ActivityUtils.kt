@@ -10,6 +10,6 @@ import androidx.activity.ComponentActivity
  * -----------
  */
 fun ComponentActivity.router(className: Class<*>) {
- val intent = Intent(this, className)
- startActivity(intent)
+    val intent = Intent(this, className)
+    startActivity(intent)
 }
