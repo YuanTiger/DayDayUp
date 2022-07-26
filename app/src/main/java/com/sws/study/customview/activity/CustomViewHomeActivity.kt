@@ -23,16 +23,20 @@ class CustomViewHomeActivity : ComponentActivity(), View.OnClickListener {
 
         findViewById<View>(R.id.bt_clip).setOnClickListener(this)
         findViewById<View>(R.id.bt_sector).setOnClickListener(this)
+        findViewById<View>(R.id.bt_xfermode).setOnClickListener(this)
     }
 
 
     override fun onClick(view: View?) {
         when (view?.id) {
             R.id.bt_clip -> {
-                router(ClipHomeActivity::class.java)
+                router(ClipActivity::class.java)
             }
             R.id.bt_sector -> {
-                router(SectorHomeActivity::class.java)
+                router(SectorActivity::class.java)
+            }
+            R.id.bt_xfermode -> {
+                router(XfermodeActivity::class.java)
             }
         }
     }

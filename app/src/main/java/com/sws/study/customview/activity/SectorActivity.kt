@@ -11,7 +11,7 @@ import com.sws.study.R
  * -----------
  * 扇形View
  */
-class SectorHomeActivity : ComponentActivity() {
+class SectorActivity : ComponentActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

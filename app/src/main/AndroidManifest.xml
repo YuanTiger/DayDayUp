@@ -28,8 +28,9 @@
         </activity>
 
         <activity android:name=".customview.activity.CustomViewHomeActivity" />
-        <activity android:name=".customview.activity.SectorHomeActivity" />
-        <activity android:name=".customview.activity.ClipHomeActivity" />
+        <activity android:name=".customview.activity.SectorActivity" />
+        <activity android:name=".customview.activity.ClipActivity" />
+        <activity android:name=".customview.activity.XfermodeActivity" />
     </application>
 
 </manifest>

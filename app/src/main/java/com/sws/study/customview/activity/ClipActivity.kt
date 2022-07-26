@@ -11,7 +11,7 @@ import com.sws.study.R
  * -----------
  * 裁剪View
  */
-class ClipHomeActivity : ComponentActivity() {
+class ClipActivity : ComponentActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
