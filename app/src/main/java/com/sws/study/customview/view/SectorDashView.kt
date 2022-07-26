@@ -4,7 +4,7 @@ import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
-import com.sws.study.utils.px
+import com.sws.study.utils.dp
 import kotlin.math.cos
 import kotlin.math.sin
 
@@ -15,10 +15,10 @@ import kotlin.math.sin
  * -----------
  * 仪表盘
  */
-private val DASH_RADIUS = 100F.px
-private val POINT_LENGTH = 80F.px
-private val DASH_WIDTH = 2F.px
-private val DASH_HEIGHT = 10F.px
+private val DASH_RADIUS = 100F.dp
+private val POINT_LENGTH = 80F.dp
+private val DASH_WIDTH = 2F.dp
+private val DASH_HEIGHT = 10F.dp
 private const val OPEN_ANGLE = 120
 
 class SectorDashView @JvmOverloads constructor(
@@ -30,7 +30,7 @@ class SectorDashView @JvmOverloads constructor(
     }
     private val dashPaint = Paint(Paint.ANTI_ALIAS_FLAG)
     private val dashArcPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        strokeWidth = 3F.px
+        strokeWidth = 3F.dp
         style = Paint.Style.STROKE
     }
     private var dashPath = Path()

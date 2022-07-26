@@ -4,7 +4,7 @@ import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
-import com.sws.study.utils.px
+import com.sws.study.utils.dp
 import kotlin.math.cos
 import kotlin.math.sin
 
@@ -16,8 +16,8 @@ import kotlin.math.sin
  * 饼图
  */
 
-private val DASH_RADIUS = 120F.px
-private val OFFSET_LENGTH = 20.px
+private val DASH_RADIUS = 120F.dp
+private val OFFSET_LENGTH = 20F.dp
 
 private val ANGLE = floatArrayOf(60f, 80f, 150f, 70f)
 private val COLORS = listOf(

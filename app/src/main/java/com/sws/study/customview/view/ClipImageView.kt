@@ -9,7 +9,7 @@ import android.view.MotionEvent
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.core.content.ContextCompat
 import com.sws.study.R
-import com.sws.study.utils.px
+import com.sws.study.utils.dp
 
 /**
  * @author mengyuan
@@ -27,8 +27,8 @@ class ClipImageView @JvmOverloads constructor(
     }
 
     private val paint = Paint()
-    private val rectF = RectF(100F.px, 100F.px, 200F.px, 300F.px)
-    private val rect = Rect(200.px, 200.px, 300.px, 300.px)
+    private val rectF = RectF(100F.dp, 100F.dp, 200F.dp, 300F.dp)
+    private val rect = Rect(200.dp, 200.dp, 300.dp, 300.dp)
     private val path = Path()
 
     /**
@@ -48,7 +48,7 @@ class ClipImageView @JvmOverloads constructor(
 
     init {
         paint.color = ContextCompat.getColor(context, R.color.c_80000000)
-        paint.strokeWidth = 2F.px
+        paint.strokeWidth = 2F.dp
         paint.isAntiAlias = true
         path.addRect(rectF, Path.Direction.CW)
         rectFRadiusX = (rectF.right - rectF.left) / 2

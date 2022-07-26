@@ -5,7 +5,7 @@ import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
 import com.sws.study.R
-import com.sws.study.utils.px
+import com.sws.study.utils.dp
 
 /**
  * @author mengyuan
@@ -15,9 +15,9 @@ import com.sws.study.utils.px
  * Xfermode实战，实现圆形头像
  */
 
-private val IMAGE_WIDTH = 200f.px
-private val MARGIN = 20f.px
-private val STROKE_WIDTH = 5f.px
+private val IMAGE_WIDTH = 200f.dp
+private val MARGIN = 20f.dp
+private val STROKE_WIDTH = 5f.dp
 
 private val XFERMODE = PorterDuffXfermode(PorterDuff.Mode.SRC_IN)
 

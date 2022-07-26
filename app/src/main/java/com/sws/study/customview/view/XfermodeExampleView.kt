@@ -4,7 +4,7 @@ import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
-import com.sws.study.utils.px
+import com.sws.study.utils.dp
 
 /**
  * @author mengyuan
@@ -22,18 +22,18 @@ class XfermodeExampleView @JvmOverloads constructor(
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
-    private val bounds = RectF(150f.px, 50f.px, 300f.px, 200f.px)
+    private val bounds = RectF(150f.dp, 50f.dp, 300f.dp, 200f.dp)
 
     override fun onDraw(canvas: Canvas) {
         val count = canvas.saveLayer(bounds, null)
 
         paint.color = Color.parseColor("#D81B60")
-        canvas.drawOval(200f.px, 50f.px, 300f.px, 150f.px, paint)
+        canvas.drawOval(200f.dp, 50f.dp, 300f.dp, 150f.dp, paint)
 
         paint.xfermode = XFERMODE
 
         paint.color = Color.parseColor("#2396f3")
-        canvas.drawRect(150f.px, 100f.px, 250f.px, 200f.px, paint)
+        canvas.drawRect(150f.dp, 100f.dp, 250f.dp, 200f.dp, paint)
 
         paint.xfermode = null
         canvas.restoreToCount(count)
