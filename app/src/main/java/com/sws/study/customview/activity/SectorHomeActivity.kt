@@ -9,13 +9,13 @@ import com.sws.study.R
  * @date 2022/7/15/10:51 上午
  * @e-mail mengyuanzz@126.com
  * -----------
- * 裁剪View
+ * 扇形View
  */
-class ClipHomeActivity : ComponentActivity() {
+class SectorHomeActivity : ComponentActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_clip_home)
+        setContentView(R.layout.activity_sector_home)
     }
 }

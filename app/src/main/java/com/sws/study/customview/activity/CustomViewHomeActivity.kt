@@ -22,6 +22,7 @@ class CustomViewHomeActivity : ComponentActivity(), View.OnClickListener {
         setContentView(R.layout.activity_custom_view_home)
 
         findViewById<View>(R.id.bt_clip).setOnClickListener(this)
+        findViewById<View>(R.id.bt_sector).setOnClickListener(this)
     }
 
 
@@ -29,6 +30,9 @@ class CustomViewHomeActivity : ComponentActivity(), View.OnClickListener {
         when (view?.id) {
             R.id.bt_clip -> {
                 router(ClipHomeActivity::class.java)
+            }
+            R.id.bt_sector -> {
+                router(SectorHomeActivity::class.java)
             }
         }
     }

@@ -11,7 +11,7 @@ import android.util.TypedValue
  * 工具方法
  */
 
-val Float.dp
+val Float.px
     get() = TypedValue.applyDimension(
         TypedValue.COMPLEX_UNIT_DIP,
         this,
@@ -19,7 +19,7 @@ val Float.dp
     )
 
 
-val Int.dp: Int
+val Int.px: Int
     get() = TypedValue.applyDimension(
         TypedValue.COMPLEX_UNIT_DIP,
         this.toFloat(),

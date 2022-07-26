@@ -28,6 +28,7 @@
         </activity>
 
         <activity android:name=".customview.activity.CustomViewHomeActivity" />
+        <activity android:name=".customview.activity.SectorHomeActivity" />
         <activity android:name=".customview.activity.ClipHomeActivity" />
     </application>
 
