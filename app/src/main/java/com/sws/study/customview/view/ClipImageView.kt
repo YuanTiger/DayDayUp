@@ -63,6 +63,9 @@ class ClipImageView @JvmOverloads constructor(
      * 注意：页面的刷新，会导致页面上的所有组件，都重新绘制
      * 所以我们可能无法控制onDraw()的调用频率
      * 所以我们不可以在onDraw函数中，创建任何对象，否则会存在隐患
+     * 注意clipPath切出来的图像，一定是存在锯齿的
+     * 因为抗锯齿的原理是在图像周边再加上一圈一像素的半透明修正，让图片看过去像是没有了锯齿
+     * 但clipPath规定了图片的显示范围，所以无法实现这种抗锯齿效果
      */
     override fun onDraw(canvas: Canvas?) {
 //        super.onDraw(canvas)

@@ -5,6 +5,7 @@
     <string name="sector">扇形</string>
     <string name="x_fermode">Xfermode</string>
     <string name="text_view_measure">TextView测量</string>
+    <string name="camera_use">Camera的使用</string>
 
 
 </resources>
