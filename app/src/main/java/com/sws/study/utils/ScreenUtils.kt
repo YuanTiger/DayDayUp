@@ -19,11 +19,7 @@ val Float.dp
     )
 
 
-val Int.dp: Int
-    get() = TypedValue.applyDimension(
-        TypedValue.COMPLEX_UNIT_DIP,
-        this.toFloat(),
-        Resources.getSystem().displayMetrics
-    ).toInt()
+val Int.dp: Float
+    get() = this.toFloat().dp
 
 

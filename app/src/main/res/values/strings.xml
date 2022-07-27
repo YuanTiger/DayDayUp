@@ -4,6 +4,7 @@
     <string name="clip">裁切</string>
     <string name="sector">扇形</string>
     <string name="x_fermode">Xfermode</string>
+    <string name="text_view_measure">TextView测量</string>
 
 
 </resources>

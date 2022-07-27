@@ -24,6 +24,7 @@ class CustomViewHomeActivity : ComponentActivity(), View.OnClickListener {
         findViewById<View>(R.id.bt_clip).setOnClickListener(this)
         findViewById<View>(R.id.bt_sector).setOnClickListener(this)
         findViewById<View>(R.id.bt_xfermode).setOnClickListener(this)
+        findViewById<View>(R.id.bt_text_view_measure).setOnClickListener(this)
     }
 
 
@@ -37,6 +38,9 @@ class CustomViewHomeActivity : ComponentActivity(), View.OnClickListener {
             }
             R.id.bt_xfermode -> {
                 router(XfermodeActivity::class.java)
+            }
+            R.id.bt_text_view_measure -> {
+                router(CustomViewTextViewActivity::class.java)
             }
         }
     }

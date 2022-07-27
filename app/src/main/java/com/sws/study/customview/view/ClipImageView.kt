@@ -28,7 +28,6 @@ class ClipImageView @JvmOverloads constructor(
 
     private val paint = Paint()
     private val rectF = RectF(100F.dp, 100F.dp, 200F.dp, 300F.dp)
-    private val rect = Rect(200.dp, 200.dp, 300.dp, 300.dp)
     private val path = Path()
 
     /**
