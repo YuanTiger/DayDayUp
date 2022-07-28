@@ -16,7 +16,7 @@ import com.sws.study.utils.dp
  * -----------
  * 关键帧
  */
-class KeyFrameActivity : ComponentActivity() {
+class AnimKeyFrameActivity : ComponentActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

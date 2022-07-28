@@ -1,6 +1,7 @@
 package com.sws.study.utils
 
 import android.content.Intent
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 
 /**
@@ -12,4 +13,9 @@ import androidx.activity.ComponentActivity
 fun ComponentActivity.router(className: Class<*>) {
     val intent = Intent(this, className)
     startActivity(intent)
+}
+
+
+fun ComponentActivity.toastShow(message: String) {
+    Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 }

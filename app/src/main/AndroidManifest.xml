@@ -36,7 +36,8 @@
         <activity android:name=".anim.activity.MainAnimActivity" />
         <activity android:name=".anim.activity.AnimBaseActivity" />
         <activity android:name=".anim.activity.AnimSetActivity" />
-        <activity android:name=".anim.activity.KeyFrameActivity" />
+        <activity android:name=".anim.activity.AnimKeyFrameActivity" />
+        <activity android:name=".anim.activity.AnimInterpolatorActivity" />
     </application>
 
 </manifest>

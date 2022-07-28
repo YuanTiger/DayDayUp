@@ -15,7 +15,6 @@ import com.sws.study.utils.router
  */
 class MainAnimActivity : ComponentActivity(), View.OnClickListener {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_anim)
@@ -23,6 +22,7 @@ class MainAnimActivity : ComponentActivity(), View.OnClickListener {
         findViewById<View>(R.id.bt_base_anim).setOnClickListener(this)
         findViewById<View>(R.id.bt_anim_set).setOnClickListener(this)
         findViewById<View>(R.id.bt_key_frame).setOnClickListener(this)
+        findViewById<View>(R.id.bt_interpolator).setOnClickListener(this)
 
     }
 
@@ -36,7 +36,10 @@ class MainAnimActivity : ComponentActivity(), View.OnClickListener {
                 router(AnimSetActivity::class.java)
             }
             R.id.bt_key_frame -> {
-                router(KeyFrameActivity::class.java)
+                router(AnimKeyFrameActivity::class.java)
+            }
+            R.id.bt_interpolator -> {
+                router(AnimInterpolatorActivity::class.java)
             }
 
         }

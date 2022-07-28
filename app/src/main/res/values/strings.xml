@@ -10,5 +10,6 @@
     <string name="base_anim_use">基础动画使用</string>
     <string name="anim_set">AnimSet(动画集合)</string>
     <string name="key_frame">KeyFrame(关键帧)</string>
+    <string name="interpolator">Interpolator(插值器)</string>
 
 </resources>

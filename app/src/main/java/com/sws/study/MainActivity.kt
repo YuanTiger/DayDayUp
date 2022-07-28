@@ -2,10 +2,12 @@ package com.sws.study
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.sws.study.anim.activity.MainAnimActivity
 import com.sws.study.customview.activity.MainCustomViewActivity
 import com.sws.study.utils.router
+import com.sws.study.utils.toastShow
 
 /**
  * @author mengyuan
@@ -26,13 +28,18 @@ class MainActivity : ComponentActivity(), View.OnClickListener {
     }
 
     override fun onClick(view: View?) {
-        val id = view?.id ?: 0
-        //自定义View
-        if (id == R.id.bt_custom_view) {
-            router(MainCustomViewActivity::class.java)
-        } else if (id == R.id.bt_anim) {
-            router(MainAnimActivity::class.java)
+        when (view?.id) {
+            R.id.bt_custom_view -> {
+                router(MainCustomViewActivity::class.java)
+            }
+            R.id.bt_anim -> {
+                router(MainAnimActivity::class.java)
+            }
+            else -> {
+                toastShow("not found")
+            }
         }
+
     }
 
 
