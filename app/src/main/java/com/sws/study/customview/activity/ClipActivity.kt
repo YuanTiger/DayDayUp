@@ -16,6 +16,6 @@ class ClipActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_clip_home)
+        setContentView(R.layout.activity_clip)
     }
 }

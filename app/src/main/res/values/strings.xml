@@ -6,6 +6,9 @@
     <string name="x_fermode">Xfermode</string>
     <string name="text_view_measure">TextView测量</string>
     <string name="camera_use">Camera的使用</string>
+    <string name="anim">动画</string>
+    <string name="base_anim_use">基础动画使用</string>
+    <string name="anim_set">AnimSet使用</string>
 
 
 </resources>

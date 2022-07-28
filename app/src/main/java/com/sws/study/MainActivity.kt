@@ -1,10 +1,10 @@
 package com.sws.study
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.ComponentActivity
-import com.sws.study.customview.activity.CustomViewHomeActivity
+import com.sws.study.anim.activity.MainAnimActivity
+import com.sws.study.customview.activity.MainCustomViewActivity
 import com.sws.study.utils.router
 
 /**
@@ -21,6 +21,7 @@ class MainActivity : ComponentActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         findViewById<View>(R.id.bt_custom_view).setOnClickListener(this)
+        findViewById<View>(R.id.bt_anim).setOnClickListener(this)
 
     }
 
@@ -28,7 +29,9 @@ class MainActivity : ComponentActivity(), View.OnClickListener {
         val id = view?.id ?: 0
         //自定义View
         if (id == R.id.bt_custom_view) {
-            router(CustomViewHomeActivity::class.java)
+            router(MainCustomViewActivity::class.java)
+        } else if (id == R.id.bt_anim) {
+            router(MainAnimActivity::class.java)
         }
     }
 

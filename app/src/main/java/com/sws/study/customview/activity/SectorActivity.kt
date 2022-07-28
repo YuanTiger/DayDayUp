@@ -16,6 +16,6 @@ class SectorActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sector_home)
+        setContentView(R.layout.activity_sector)
     }
 }

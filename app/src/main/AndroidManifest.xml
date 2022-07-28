@@ -27,12 +27,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".customview.activity.CustomViewHomeActivity" />
+        <activity android:name=".customview.activity.MainCustomViewActivity" />
         <activity android:name=".customview.activity.SectorActivity" />
         <activity android:name=".customview.activity.ClipActivity" />
         <activity android:name=".customview.activity.XfermodeActivity" />
         <activity android:name=".customview.activity.CustomViewTextViewActivity" />
         <activity android:name=".customview.activity.CameraActivity" />
+        <activity android:name=".anim.activity.MainAnimActivity" />
+        <activity android:name=".anim.activity.AnimBaseActivity" />
+        <activity android:name=".anim.activity.AnimSetActivity" />
     </application>
 
 </manifest>

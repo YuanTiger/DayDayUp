@@ -14,12 +14,12 @@ import com.sws.study.utils.router
  * 自定义View入口
  * 包含了自定义View的相关学习内容
  */
-class CustomViewHomeActivity : ComponentActivity(), View.OnClickListener {
+class MainCustomViewActivity : ComponentActivity(), View.OnClickListener {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_custom_view_home)
+        setContentView(R.layout.activity_main_custom_view)
 
         findViewById<View>(R.id.bt_clip).setOnClickListener(this)
         findViewById<View>(R.id.bt_sector).setOnClickListener(this)
