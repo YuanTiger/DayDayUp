@@ -3,12 +3,12 @@
     <string name="custom_view">自定义View</string>
     <string name="clip">裁切</string>
     <string name="sector">扇形</string>
-    <string name="x_fermode">Xfermode</string>
+    <string name="xfermode">Xfermode</string>
     <string name="text_view_measure">TextView测量</string>
     <string name="camera_use">Camera的使用</string>
     <string name="anim">动画</string>
     <string name="base_anim_use">基础动画使用</string>
-    <string name="anim_set">AnimSet使用</string>
-
+    <string name="anim_set">AnimSet(动画集合)</string>
+    <string name="key_frame">KeyFrame(关键帧)</string>
 
 </resources>

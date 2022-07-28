@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.ComponentActivity
 import com.sws.study.R
-import com.sws.study.anim.view.OvalView
 import com.sws.study.utils.router
 
 /**
@@ -23,6 +22,7 @@ class MainAnimActivity : ComponentActivity(), View.OnClickListener {
 
         findViewById<View>(R.id.bt_base_anim).setOnClickListener(this)
         findViewById<View>(R.id.bt_anim_set).setOnClickListener(this)
+        findViewById<View>(R.id.bt_key_frame).setOnClickListener(this)
 
     }
 
@@ -34,6 +34,9 @@ class MainAnimActivity : ComponentActivity(), View.OnClickListener {
             }
             R.id.bt_anim_set -> {
                 router(AnimSetActivity::class.java)
+            }
+            R.id.bt_key_frame -> {
+                router(KeyFrameActivity::class.java)
             }
 
         }

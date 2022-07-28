@@ -13,12 +13,11 @@ import com.sws.study.utils.dp
  * @date 2022/7/27/6:09 下午
  * @e-mail mengyuanzz@126.com
  * -----------
- * 小球View
  */
 
 val BOTTOM_LINE_HEIGHT = 2f.dp
 
-class OvalView @JvmOverloads constructor(
+class CircleView @JvmOverloads constructor(
     context: Context?,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0,
@@ -26,7 +25,7 @@ class OvalView @JvmOverloads constructor(
 ) :
     View(context, attrs, defStyleAttr, defStyleRes) {
 
-     var radius = 40f.dp
+     var radius = 20f.dp
         set(value) {
             field = value
             invalidate()

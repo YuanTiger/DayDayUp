@@ -41,7 +41,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="42dp"
         android:background="@drawable/bg_ffcc45_r12"
-        android:text="@string/x_fermode"
+        android:text="@string/xfermode"
         android:textAllCaps="false"
         android:textColor="@color/c_242323"
         android:textSize="14sp" />
