@@ -61,14 +61,14 @@ class ProvinceView @JvmOverloads constructor(
     View(context, attrs, defStyleAttr, defStyleRes) {
 
 
-    var province = "北京市"
+    var province = cityList[0]
         set(value) {
             field = value
             invalidate()
         }
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        textSize = 80.dp
+        textSize = 30.dp
         textAlign = Paint.Align.CENTER
     }
 

@@ -4,6 +4,7 @@ import android.animation.ObjectAnimator
 import android.animation.TypeEvaluator
 import android.graphics.PointF
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.AccelerateInterpolator
@@ -69,6 +70,10 @@ class AnimTypeEvaluatorActivity : ComponentActivity() {
 
         override fun evaluate(fraction: Float, startValue: String, endValue: String): String {
             val startIndex = cityList.indexOf(startValue)
+            Log.i("ProvinceEvaluator_","fraction:{$fraction}")
+            Log.i("ProvinceEvaluator_","startValue:{$startValue}")
+            Log.i("ProvinceEvaluator_","endValue:{$endValue}")
+            Log.i("ProvinceEvaluator_","----------------------")
             val endIndex = cityList.indexOf(endValue)
             val currentIndex = startIndex + ((endIndex - startIndex) * fraction).toInt()
             return cityList[currentIndex]
