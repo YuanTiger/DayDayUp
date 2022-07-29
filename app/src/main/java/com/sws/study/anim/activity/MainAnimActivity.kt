@@ -47,7 +47,7 @@ class MainAnimActivity : ComponentActivity(), View.OnClickListener {
                 router(AnimTypeEvaluatorActivity::class.java)
             }
             R.id.bt_layer_type -> {
-                router(AnimTypeEvaluatorActivity::class.java)
+                router(LayerTypeActivity::class.java)
             }
 
         }
