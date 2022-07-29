@@ -38,6 +38,7 @@
         <activity android:name=".anim.activity.AnimSetActivity" />
         <activity android:name=".anim.activity.AnimKeyFrameActivity" />
         <activity android:name=".anim.activity.AnimInterpolatorActivity" />
+        <activity android:name=".anim.activity.AnimTypeEvaluatorActivity" />
     </application>
 
 </manifest>

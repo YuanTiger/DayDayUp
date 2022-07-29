@@ -41,6 +41,9 @@ class XfermodeAvatarView @JvmOverloads constructor(
     )
 
     override fun onDraw(canvas: Canvas) {
+        /**
+         * 离屏缓冲
+         */
         val count = canvas.saveLayer(bounds, null)
         canvas.drawOval(bounds, paint)
         paint.xfermode = XFERMODE

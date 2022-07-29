@@ -23,6 +23,7 @@ class MainAnimActivity : ComponentActivity(), View.OnClickListener {
         findViewById<View>(R.id.bt_anim_set).setOnClickListener(this)
         findViewById<View>(R.id.bt_key_frame).setOnClickListener(this)
         findViewById<View>(R.id.bt_interpolator).setOnClickListener(this)
+        findViewById<View>(R.id.bt_type_evaluator).setOnClickListener(this)
 
     }
 
@@ -40,6 +41,9 @@ class MainAnimActivity : ComponentActivity(), View.OnClickListener {
             }
             R.id.bt_interpolator -> {
                 router(AnimInterpolatorActivity::class.java)
+            }
+            R.id.bt_type_evaluator -> {
+                router(AnimTypeEvaluatorActivity::class.java)
             }
 
         }
