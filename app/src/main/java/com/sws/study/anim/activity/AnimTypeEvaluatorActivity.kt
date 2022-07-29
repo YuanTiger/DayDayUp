@@ -6,13 +6,8 @@ import android.graphics.PointF
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.view.animation.AccelerateDecelerateInterpolator
-import android.view.animation.AccelerateInterpolator
-import android.view.animation.DecelerateInterpolator
-import android.view.animation.LinearInterpolator
 import androidx.activity.ComponentActivity
 import com.sws.study.R
-import com.sws.study.anim.view.ProvinceView
 import com.sws.study.anim.view.cityList
 import com.sws.study.utils.dp
 

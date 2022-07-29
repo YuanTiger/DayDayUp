@@ -12,5 +12,6 @@
     <string name="key_frame">KeyFrame(关键帧)</string>
     <string name="interpolator">Interpolator(插值器)</string>
     <string name="type_evaluator">TypeEvaluator(类型属性计算器)</string>
+    <string name="layer_type">LayerType(离屏缓冲)</string>
 
 </resources>

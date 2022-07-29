@@ -3,10 +3,7 @@ package com.sws.study.anim.activity
 import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.view.View
-import android.view.animation.AccelerateDecelerateInterpolator
-import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
-import android.view.animation.LinearInterpolator
 import androidx.activity.ComponentActivity
 import com.sws.study.R
 import com.sws.study.utils.dp

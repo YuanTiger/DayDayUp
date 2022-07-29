@@ -1,13 +1,11 @@
 package com.sws.study.anim.activity
 
-import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.animation.PropertyValuesHolder
 import android.os.Bundle
 import android.view.View
 import androidx.activity.ComponentActivity
 import com.sws.study.R
-import com.sws.study.utils.dp
 
 /**
  * @author mengyuan
