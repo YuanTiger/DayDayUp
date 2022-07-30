@@ -26,6 +26,7 @@ class MainCustomViewActivity : ComponentActivity(), View.OnClickListener {
         findViewById<View>(R.id.bt_xfermode).setOnClickListener(this)
         findViewById<View>(R.id.bt_text_view_measure).setOnClickListener(this)
         findViewById<View>(R.id.bt_camera_anim).setOnClickListener(this)
+        findViewById<View>(R.id.bt_bitmap_drawable).setOnClickListener(this)
     }
 
 
@@ -45,6 +46,8 @@ class MainCustomViewActivity : ComponentActivity(), View.OnClickListener {
             }
             R.id.bt_camera_anim -> {
                 router(CameraActivity::class.java)
+            } R.id.bt_bitmap_drawable -> {
+                router(BitmapDrawableActivity::class.java)
             }
         }
     }

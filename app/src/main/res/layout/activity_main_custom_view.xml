@@ -72,4 +72,17 @@
         android:textAllCaps="false"
         android:textColor="@color/c_242323"
         android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/bt_bitmap_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="42dp"
+        android:background="@drawable/bg_ffcc45_r12"
+        android:text="@string/bitmap_drawable"
+        android:textAllCaps="false"
+        android:textColor="@color/c_242323"
+        android:textSize="14sp" />
 </LinearLayout>
