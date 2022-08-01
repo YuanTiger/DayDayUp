@@ -26,7 +26,7 @@ class BitmapDrawableActivity : ComponentActivity() {
          */
 
         /**
-         * Drawable：调用Canvas绘制的上层绘制工具，更像是一个只支持onDraw()的View
+         * Drawable：本质上，Drawable是调用Canvas绘制的上层绘制工具，更像是一个只支持onDraw()的View
          */
 //        val bitmap = BitmapFactory.decodeResource(resources, R.mipmap.avatar)
 //        //KTX封装了bitmap与drawable互转的扩展函数
