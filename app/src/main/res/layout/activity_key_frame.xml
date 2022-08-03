@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
 
-    <com.sws.study.anim.view.CircleView
+    <com.sws.study.anim.view.AnimCircleView
         android:id="@+id/view_1"
         android:layout_width="40dp"
         android:layout_height="40dp"

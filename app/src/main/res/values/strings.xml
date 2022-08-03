@@ -15,5 +15,6 @@
     <string name="layer_type">LayerType(离屏缓冲)</string>
     <string name="bitmap_drawable">Bitmap&amp;Drawable</string>
     <string name="material_edittext">MaterialEdittext</string>
+    <string name="measure">Measure(自定义View大小、位置测量)</string>
 
 </resources>

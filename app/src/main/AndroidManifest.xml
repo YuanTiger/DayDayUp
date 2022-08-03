@@ -35,6 +35,7 @@
         <activity android:name=".customview.activity.CameraActivity" />
         <activity android:name=".customview.activity.BitmapDrawableActivity" />
         <activity android:name=".customview.activity.MaterialEditTextActivity" />
+        <activity android:name=".customview.activity.MeasureActivity" />
         <activity android:name=".anim.activity.MainAnimActivity" />
         <activity android:name=".anim.activity.AnimBaseActivity" />
         <activity android:name=".anim.activity.AnimSetActivity" />

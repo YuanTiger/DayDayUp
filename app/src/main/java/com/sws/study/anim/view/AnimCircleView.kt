@@ -17,7 +17,7 @@ import com.sws.study.utils.dp
 
 val BOTTOM_LINE_HEIGHT = 2f.dp
 
-class CircleView @JvmOverloads constructor(
+class AnimCircleView @JvmOverloads constructor(
     context: Context?,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0,
