@@ -29,6 +29,7 @@ class MainCustomViewActivity : ComponentActivity(), View.OnClickListener {
         findViewById<View>(R.id.bt_bitmap_drawable).setOnClickListener(this)
         findViewById<View>(R.id.bt_material_edittext).setOnClickListener(this)
         findViewById<View>(R.id.bt_measure).setOnClickListener(this)
+        findViewById<View>(R.id.bt_tag_view).setOnClickListener(this)
     }
 
 
@@ -57,6 +58,9 @@ class MainCustomViewActivity : ComponentActivity(), View.OnClickListener {
             }
             R.id.bt_measure -> {
                 router(MeasureActivity::class.java)
+            }
+            R.id.bt_tag_view -> {
+                router(TagViewActivity::class.java)
             }
         }
     }

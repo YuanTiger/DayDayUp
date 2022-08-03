@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sws.study.customview.view.TagView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="北京市" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="河南省" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="澳门特别行政区" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重庆市" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="江苏省" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="呼和浩特" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="啦啦啦啦" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="啦啦" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="澳门特别行政区" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重庆市" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="江苏省" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="呼和浩特" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="啦啦啦啦" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="啦啦" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="澳门特别行政区" />
+
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="北京市" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="河南省" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="澳门特别行政区" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重庆市" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="江苏省" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="呼和浩特" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="啦啦啦啦" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="啦啦" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="澳门特别行政区" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重庆市" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="江苏省" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="呼和浩特" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="啦啦啦啦" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="啦啦" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="澳门特别行政区" />
+
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="北京市" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="河南省" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="澳门特别行政区" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重庆市" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="江苏省" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="呼和浩特" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="啦啦啦啦" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="啦啦" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="澳门特别行政区" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重庆市" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="江苏省" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="呼和浩特" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="啦啦啦啦" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="啦啦" />
+
+    <com.sws.study.customview.view.ColorTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="澳门特别行政区" />
+</com.sws.study.customview.view.TagView>

@@ -16,5 +16,6 @@
     <string name="bitmap_drawable">Bitmap&amp;Drawable</string>
     <string name="material_edittext">MaterialEdittext</string>
     <string name="measure">Measure(自定义View大小、位置测量)</string>
+    <string name="tag_view">TagView(流式布局)</string>
 
 </resources>
