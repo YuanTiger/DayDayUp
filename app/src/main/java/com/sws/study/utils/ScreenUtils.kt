@@ -23,3 +23,14 @@ val Int.dp: Float
     get() = this.toFloat().dp
 
 
+val Float.sp
+    get() = TypedValue.applyDimension(
+        TypedValue.COMPLEX_UNIT_SP,
+        this,
+        Resources.getSystem().displayMetrics
+    )
+
+
+val Int.sp: Float
+    get() = this.toFloat().sp
+
