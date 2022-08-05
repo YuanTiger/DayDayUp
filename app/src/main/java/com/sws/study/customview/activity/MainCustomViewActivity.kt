@@ -30,6 +30,7 @@ class MainCustomViewActivity : ComponentActivity(), View.OnClickListener {
         findViewById<View>(R.id.bt_material_edittext).setOnClickListener(this)
         findViewById<View>(R.id.bt_measure).setOnClickListener(this)
         findViewById<View>(R.id.bt_tag_view).setOnClickListener(this)
+        findViewById<View>(R.id.bt_touch).setOnClickListener(this)
     }
 
 
@@ -61,6 +62,9 @@ class MainCustomViewActivity : ComponentActivity(), View.OnClickListener {
             }
             R.id.bt_tag_view -> {
                 router(TagViewActivity::class.java)
+            }
+            R.id.bt_touch -> {
+                router(TouchActivity::class.java)
             }
         }
     }
