@@ -64,6 +64,5 @@ class MultilineTextView(context: Context, attrs: AttributeSet?) :
         options.inDensity = options.outWidth
         options.inTargetDensity = width.toInt()
         return BitmapFactory.decodeResource(resources, R.mipmap.avatar, options)
-
     }
 }

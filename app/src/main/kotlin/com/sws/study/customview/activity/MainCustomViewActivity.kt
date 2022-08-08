@@ -31,6 +31,7 @@ class MainCustomViewActivity : ComponentActivity(), View.OnClickListener {
         findViewById<View>(R.id.bt_measure).setOnClickListener(this)
         findViewById<View>(R.id.bt_tag_view).setOnClickListener(this)
         findViewById<View>(R.id.bt_touch).setOnClickListener(this)
+        findViewById<View>(R.id.bt_scalable_view).setOnClickListener(this)
     }
 
 
@@ -65,6 +66,9 @@ class MainCustomViewActivity : ComponentActivity(), View.OnClickListener {
             }
             R.id.bt_touch -> {
                 router(TouchActivity::class.java)
+            }
+            R.id.bt_scalable_view -> {
+                router(ScalableImageViewActivity::class.java)
             }
         }
     }
