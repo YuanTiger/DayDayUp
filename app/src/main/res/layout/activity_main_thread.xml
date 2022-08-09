@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_thread_base"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="42dp"
+            android:background="@drawable/bg_ffcc45_r12"
+            android:text="@string/thread_base"
+            android:textAllCaps="false"
+            android:textColor="@color/c_242323"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+</ScrollView>
