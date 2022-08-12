@@ -83,6 +83,5 @@ class CanvasAnimView @JvmOverloads constructor(
         options.inDensity = options.outWidth
         options.inTargetDensity = width.toInt()
         return BitmapFactory.decodeResource(resources, R.mipmap.ic_avatar, options)
-
     }
 }

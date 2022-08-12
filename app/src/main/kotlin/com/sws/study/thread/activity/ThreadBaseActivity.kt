@@ -1,11 +1,14 @@
 package com.sws.study.thread.activity
 
+import android.os.AsyncTask
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
 import com.sws.study.R
+import java.lang.Thread.sleep
 import java.util.concurrent.*
 import java.util.concurrent.atomic.AtomicInteger
+import kotlin.concurrent.thread
 
 /**
  * @author mengyuan
@@ -16,8 +19,9 @@ import java.util.concurrent.atomic.AtomicInteger
  */
 class ThreadBaseActivity : ComponentActivity() {
 
-    private val TAG = "ThreadBaseActivity_"
-
+    companion object {
+        private const val TAG = "ThreadBaseActivity_"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +32,23 @@ class ThreadBaseActivity : ComponentActivity() {
 //        threadFactory()
 //        executor()
 //        callable()
+//        testThreadInterrupt()
+    }
+
+    private fun testThreadInterrupt() {
+        val thread = Thread {
+            for (index in 1..1_00_000) {
+//                    if(Thread.interrupted()){
+//                        Log.i(TAG,"interrupted:$index")
+//                        return@Thread
+//                    }
+                Log.i(TAG, "index:$index")
+            }
+        }
+        thread.start()
+        sleep(1000)
+        thread.stop()
+//        thread.interrupt()
     }
 
 
@@ -46,7 +67,7 @@ class ThreadBaseActivity : ComponentActivity() {
     /**
      * 相比threadStudy()
      * 该方法的优势在于runnable可以复用
-     * 一般正式写程序不使用，管理性太低
+     * 不过一般正式写程序不使用，管理性太低
      */
     private fun runnable() {
         val runnable = Runnable {
@@ -61,7 +82,6 @@ class ThreadBaseActivity : ComponentActivity() {
 
     /**
      * 线程池，利用典型的工厂模式
-     *
      */
     private fun threadFactory() {
         val threadFactory = MyThreadFactory()

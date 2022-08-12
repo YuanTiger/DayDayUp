@@ -21,5 +21,6 @@
     <string name="scalable_image_view">双向滑动的View</string>
     <string name="thread">Thread(线程)</string>
     <string name="thread_base">线程基础</string>
+    <string name="multi_touch">多点触摸</string>
 
 </resources>
