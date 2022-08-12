@@ -53,7 +53,7 @@ class SportView(context: Context, attrs: AttributeSet?) :
         paint.style = Paint.Style.FILL
         //使用这种测量方式，是在测量文本内容的矩阵大小的坐标
         //这个矩阵大小是刚好包裹住文本大小的，所以说像p、g这种靠下的字母，会导致矩阵偏下
-        //也就是说如果文本内容中有这些字符，会导致矩阵偏下，如果文本中没有这些字符，又会导致文本居中，从而导致动态改变文本时，文字上下跳动
+        //也就是说如果文本内容中有这些字符，会导致矩阵偏下，如果文本中没有这些字符，又会导致文本居中，从而导致动态改变文本时，文字控件上下跳动
 //        paint.getTextBounds(text, 0, text.length, bounds)
 //        canvas.drawText(text, width / 2f, height / 2f - (bounds.top + bounds.bottom) / 2f, paint)
 
