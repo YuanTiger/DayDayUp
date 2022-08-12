@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.sws.study.customview.view.SingleTouchView
+    <com.sws.study.customview.view.MultiTouchView4
         android:id="@+id/view_multi_touch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
