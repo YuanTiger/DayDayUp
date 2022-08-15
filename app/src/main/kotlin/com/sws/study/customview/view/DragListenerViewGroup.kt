@@ -13,6 +13,9 @@ import androidx.core.view.children
  * @e-mail mengyuanzz@126.com
  * -----------
  * 拖拽View，使用DragListener实现
+ * 1、拖拽时，原View仍会存在，当然可以手动控制隐藏；
+ * 2、拖拽时，拖拽的View会进入半透明状态；
+ * 3、拖拽时，拖拽View不会被任何View遮盖；
  */
 
 private const val COLUMNS = 2
@@ -44,7 +47,6 @@ class DragListenerViewGroup(context: Context?, attrs: AttributeSet?) : ViewGroup
             child.setOnDragListener(dragListener)
         }
     }
-
 
     /**
      * 这样测量View大小并不严谨，只是为了实现效果而已
