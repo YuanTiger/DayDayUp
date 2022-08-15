@@ -23,5 +23,6 @@
     <string name="thread_base">线程基础</string>
     <string name="multi_touch">多点触摸</string>
     <string name="view_pager_easy">简单实现ViewPager</string>
+    <string name="drag">拖拽</string>
 
 </resources>

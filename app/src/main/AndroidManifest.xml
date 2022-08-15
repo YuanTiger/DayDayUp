@@ -41,6 +41,7 @@
         <activity android:name=".customview.activity.ScalableImageViewActivity" />
         <activity android:name=".customview.activity.MultiTouchActivity" />
         <activity android:name=".customview.activity.TwoViewPagerActivity" />
+        <activity android:name=".customview.activity.DragActivity" />
         <activity android:name=".anim.activity.MainAnimActivity" />
         <activity android:name=".anim.activity.AnimBaseActivity" />
         <activity android:name=".anim.activity.AnimSetActivity" />
