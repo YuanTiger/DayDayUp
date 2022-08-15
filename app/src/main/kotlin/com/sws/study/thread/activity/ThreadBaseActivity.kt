@@ -32,23 +32,24 @@ class ThreadBaseActivity : ComponentActivity() {
 //        threadFactory()
 //        executor()
 //        callable()
-//        testThreadInterrupt()
+        testThreadInterrupt()
     }
 
     private fun testThreadInterrupt() {
         val thread = Thread {
-            for (index in 1..1_00_000) {
-//                    if(Thread.interrupted()){
-//                        Log.i(TAG,"interrupted:$index")
-//                        return@Thread
-//                    }
+            for (index in 1..1_000_000) {
+                    if(Thread.interrupted()){
+                        Log.i(TAG,"interrupted:$index")
+                        return@Thread
+                    }
                 Log.i(TAG, "index:$index")
             }
         }
         thread.start()
         sleep(1000)
-        thread.stop()
-//        thread.interrupt()
+        //Android4.1.3之后，thread不能使用stop，可以查看stop源码
+//        thread.stop()
+        thread.interrupt()
     }
 
 
