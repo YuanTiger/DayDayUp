@@ -1,4 +1,4 @@
-package com.sws.study.customview.view
+package com.sws.study.touch.view
 
 import android.content.Context
 import android.util.AttributeSet

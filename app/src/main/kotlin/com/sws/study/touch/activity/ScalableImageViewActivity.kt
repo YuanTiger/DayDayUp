@@ -1,10 +1,8 @@
-package com.sws.study.customview.activity
+package com.sws.study.touch.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import com.sws.study.R
-import com.sws.study.customview.view.ScalableImageView
-import com.sws.study.customview.view.TouchView
 
 /**
  * @author mengyuan

@@ -1,4 +1,4 @@
-package com.sws.study.customview.activity
+package com.sws.study.touch.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
