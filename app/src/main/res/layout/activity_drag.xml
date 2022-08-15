@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.sws.study.customview.view.DragListenerViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+<com.sws.study.touch.view.DragListenerViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<!--    <com.sws.study.customview.view.DragHelperViewGroup xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    <com.sws.study.touch.view.DragHelperViewGroup xmlns:android="http://schemas.android.com/apk/res/android"-->
 <!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="match_parent">-->
@@ -48,5 +48,5 @@
         android:layout_height="match_parent"
         android:background="@color/c_0091ff" />
 
-<!--</com.sws.study.customview.view.DragHelperViewGroup>-->
-</com.sws.study.customview.view.DragListenerViewGroup>
+<!--</com.sws.study.touch.view.DragHelperViewGroup>-->
+</com.sws.study.touch.view.DragListenerViewGroup>
