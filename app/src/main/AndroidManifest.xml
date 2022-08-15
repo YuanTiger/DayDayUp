@@ -52,6 +52,8 @@
         <activity android:name=".anim.activity.LayerTypeActivity" />
         <activity android:name=".thread.activity.MainThreadActivity" />
         <activity android:name=".thread.activity.ThreadBaseActivity" />
+        <activity android:name=".transition.activity.MainTransitionActivity" />
+        <activity android:name=".transition.activity.TransitionAnimDifferenceActivity" />
     </application>
 
 </manifest>

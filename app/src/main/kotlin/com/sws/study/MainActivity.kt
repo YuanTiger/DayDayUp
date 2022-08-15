@@ -8,6 +8,7 @@ import com.sws.study.anim.activity.MainAnimActivity
 import com.sws.study.customview.activity.MainCustomViewActivity
 import com.sws.study.thread.activity.MainThreadActivity
 import com.sws.study.touch.activity.MainTouchActivity
+import com.sws.study.transition.activity.MainTransitionActivity
 import com.sws.study.utils.router
 import com.sws.study.utils.toastShow
 
@@ -28,6 +29,7 @@ class MainActivity : ComponentActivity(), View.OnClickListener {
         findViewById<View>(R.id.bt_anim).setOnClickListener(this)
         findViewById<View>(R.id.bt_touch).setOnClickListener(this)
         findViewById<View>(R.id.bt_thread).setOnClickListener(this)
+        findViewById<View>(R.id.bt_transition).setOnClickListener(this)
 
     }
 
@@ -44,6 +46,9 @@ class MainActivity : ComponentActivity(), View.OnClickListener {
             }
             R.id.bt_thread -> {
                 router(MainThreadActivity::class.java)
+            }
+            R.id.bt_transition -> {
+                router(MainTransitionActivity::class.java)
             }
             else -> {
                 toastShow("not found")

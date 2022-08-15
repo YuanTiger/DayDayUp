@@ -1,6 +1,7 @@
 package com.sws.study.utils
 
 import android.content.Intent
+import android.util.DisplayMetrics
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 
@@ -18,4 +19,18 @@ fun ComponentActivity.router(className: Class<*>) {
 
 fun ComponentActivity.toastShow(message: String) {
     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+}
+
+fun ComponentActivity.getScreenWidth(): Int {
+    val resources = resources
+    val dm = resources.displayMetrics
+    return dm.widthPixels
+}
+
+
+fun ComponentActivity.getScreenHeight(): Int {
+    val resources = resources
+    val dm = resources.displayMetrics
+    return dm.heightPixels
+
 }

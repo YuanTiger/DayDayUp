@@ -6,7 +6,7 @@
     <string name="xfermode">Xfermode</string>
     <string name="text_view_measure">TextView测量</string>
     <string name="camera_use">Camera的使用</string>
-    <string name="anim">Animator(动画)</string>
+    <string name="anim">Animator(属性动画)</string>
     <string name="base_anim_use">基础动画使用</string>
     <string name="anim_set">AnimSet(动画集合)</string>
     <string name="key_frame">KeyFrame(关键帧)</string>
@@ -24,5 +24,7 @@
     <string name="multi_touch">多点触摸</string>
     <string name="view_pager_easy">简单实现ViewPager</string>
     <string name="drag">拖拽</string>
+    <string name="transition">Transition(过渡动画)</string>
+    <string name="anim_difference">与属性动画的区别</string>
 
 </resources>
