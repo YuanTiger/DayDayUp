@@ -19,7 +19,7 @@ import androidx.core.view.children
  */
 
 private const val COLUMNS = 2
-private const val ROUWS = 3
+private const val ROWS = 3
 
 class DragListenerViewGroup(context: Context?, attrs: AttributeSet?) : ViewGroup(context, attrs) {
 
@@ -55,7 +55,7 @@ class DragListenerViewGroup(context: Context?, attrs: AttributeSet?) : ViewGroup
         val specWidth = MeasureSpec.getSize(widthMeasureSpec)
         val specHeight = MeasureSpec.getSize(heightMeasureSpec)
         val childWidth = specWidth / COLUMNS
-        val childHeight = specHeight / ROUWS
+        val childHeight = specHeight / ROWS
         measureChildren(
             MeasureSpec.makeMeasureSpec(childWidth, MeasureSpec.EXACTLY),
             MeasureSpec.makeMeasureSpec(childHeight, MeasureSpec.EXACTLY)
@@ -68,7 +68,7 @@ class DragListenerViewGroup(context: Context?, attrs: AttributeSet?) : ViewGroup
         var childLeft: Int
         var childTop: Int
         val childWidth = width / COLUMNS
-        val childHeight = height / ROUWS
+        val childHeight = height / ROWS
         for ((index, child) in children.withIndex()) {
             childLeft = index % 2 * childWidth
             childTop = index / 2 * childHeight
@@ -139,7 +139,7 @@ class DragListenerViewGroup(context: Context?, attrs: AttributeSet?) : ViewGroup
         var childLeft: Int
         var childTop: Int
         val childWidth = width / COLUMNS
-        val childHeight = height / ROUWS
+        val childHeight = height / ROWS
         for ((index, child) in orderedChildren.withIndex()) {
             childLeft = index % 2 * childWidth
             childTop = index / 2 * childHeight

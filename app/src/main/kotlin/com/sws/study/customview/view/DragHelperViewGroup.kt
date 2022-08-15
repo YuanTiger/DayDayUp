@@ -18,7 +18,7 @@ import androidx.customview.widget.ViewDragHelper
  */
 
 private const val COLUMNS = 2
-private const val ROUWS = 3
+private const val ROWS = 3
 
 class DragHelperViewGroup(context: Context?, attrs: AttributeSet?) : ViewGroup(context, attrs) {
 
@@ -29,7 +29,7 @@ class DragHelperViewGroup(context: Context?, attrs: AttributeSet?) : ViewGroup(c
         val specWidth = MeasureSpec.getSize(widthMeasureSpec)
         val specHeight = MeasureSpec.getSize(heightMeasureSpec)
         val childWidth = specWidth / COLUMNS
-        val childHeight = specHeight / ROUWS
+        val childHeight = specHeight / ROWS
         measureChildren(
             MeasureSpec.makeMeasureSpec(childWidth, MeasureSpec.EXACTLY),
             MeasureSpec.makeMeasureSpec(childHeight, MeasureSpec.EXACTLY)
@@ -42,7 +42,7 @@ class DragHelperViewGroup(context: Context?, attrs: AttributeSet?) : ViewGroup(c
         var childLeft: Int
         var childTop: Int
         val childWidth = width / COLUMNS
-        val childHeight = height / ROUWS
+        val childHeight = height / ROWS
         for ((index, child) in children.withIndex()) {
             childLeft = index % 2 * childWidth
             childTop = index / 2 * childHeight
