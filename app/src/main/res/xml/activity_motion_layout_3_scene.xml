@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+
+        <KeyFrameSet>
+            <!--
+            属性关键帧，播放到指定进度时，属性改变到指定数值
+            framePosition：动画进度
+            motionTarget：目标组件
+            -->
+            <!--            <KeyAttribute-->
+            <!--                android:rotation="180"-->
+            <!--                android:scaleX="2.0"-->
+            <!--                android:scaleY="2.0"-->
+            <!--                motion:framePosition="50"-->
+            <!--                motion:motionTarget="@id/view_3" />-->
+
+
+            <!--
+                 位置关键帧，播放到指定进度时，控件会移动到指定的位置
+                 percentX：x轴的位移距离，比如起点->终点，一共要移动100像素，那么0.25就是在动画播放到50%时，x轴移动距离为25像素
+                 percentY：Y轴的位移距离
+                 pathMotionArc：动画模型，想要该属性生效，在开始的ConstraintSet中，也必须声明模型，模型可以不一样
+                 keyPositionType：坐标轴模式
+                 -->
+            <!--keyPositionType：parentRelative：坐标系模型是父容器大小-->
+            <!--keyPositionType：deltaRelative：坐标系模型是起点、终点，动画起点是坐标系(0,0)点，动画终点是坐标系的终点(1,1)，和父容器无关-->
+            <!--keyPositionType：pathRelative：坐标系模型也是基于起点，终点，但发生了旋转，动画起点是(0,0)，但终点变为了(1,0)，可以脑补一下，是斜着的-->
+            <!--keyPositionType：pathRelative：因为x轴的距离已经确定，所以y轴的距离，是参考x轴的比例，生成的，所以在该模式下，0.5x一定等于0.5y-->
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@id/view_3"
+                motion:pathMotionArc="startHorizontal"
+                motion:percentX="0.5"
+                motion:percentY="0.5" />
+
+        </KeyFrameSet>
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorSide="bottom" />
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint android:id="@+id/view_3">
+
+            <Motion motion:pathMotionArc="startVertical" />
+
+            <Layout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toTopOf="parent" />
+
+
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint android:id="@+id/view_3">
+
+            <Layout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent" />
+
+
+        </Constraint>
+
+    </ConstraintSet>
+</MotionScene>

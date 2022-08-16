@@ -37,7 +37,9 @@
 　　\n可是，救赎之路从来都不会一帆风顺，到底哪里才是真实的世界？如何才能打败那些超人一样的特勤？尼奥是不是人类的希望？这是黑客的帝国，程序和代码欢迎大家的到来。</string>
 
 
-    <string name="motion_layout_use_1">MotionLayout的使用_1</string>
-    <string name="motion_layout_use_2">MotionLayout的使用_2</string>
+    <string name="motion_layout_use_1">MotionLayout基础</string>
+    <string name="motion_layout_use_2">MotionLayout基础_2</string>
+    <string name="motion_layout_use_3">MotionLayout关键帧</string>
+    <string name="motion_layout_use_4">MotionLayout实现特效1</string>
 
 </resources>

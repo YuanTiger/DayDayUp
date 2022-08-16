@@ -8,7 +8,6 @@
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
         motion:duration="500">
-        <KeyFrameSet></KeyFrameSet>
         <!--  点击开始动画-->
         <!--  clickAction：动画模式-->
         <!--        <OnClick-->

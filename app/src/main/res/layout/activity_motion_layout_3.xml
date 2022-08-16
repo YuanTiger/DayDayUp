@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/root"
     android:layout_width="match_parent"
-    app:motionDebug="SHOW_ALL"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/activity_motion_layout_2_scene">
+    app:motionDebug="SHOW_ALL"
+    app:layoutDescription="@xml/activity_motion_layout_3_scene">
 
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
-        android:id="@+id/view_test"
+        android:id="@+id/view_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_avatar" />

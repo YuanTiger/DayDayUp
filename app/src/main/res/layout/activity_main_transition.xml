@@ -24,7 +24,6 @@
             android:textSize="14sp" />
 
 
-
         <Button
             android:id="@+id/bt_motion_layout_1"
             android:layout_width="match_parent"
@@ -36,7 +35,9 @@
             android:text="@string/motion_layout_use_1"
             android:textAllCaps="false"
             android:textColor="@color/c_242323"
-            android:textSize="14sp" /> <Button
+            android:textSize="14sp" />
+
+        <Button
             android:id="@+id/bt_motion_layout_2"
             android:layout_width="match_parent"
             android:layout_height="52dp"
@@ -49,6 +50,30 @@
             android:textColor="@color/c_242323"
             android:textSize="14sp" />
 
+        <Button
+            android:id="@+id/bt_motion_layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="42dp"
+            android:background="@drawable/bg_ffcc45_r12"
+            android:text="@string/motion_layout_use_3"
+            android:textAllCaps="false"
+            android:textColor="@color/c_242323"
+            android:textSize="14sp" />
+        <Button
+            android:id="@+id/bt_motion_layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="42dp"
+            android:background="@drawable/bg_ffcc45_r12"
+            android:text="@string/motion_layout_use_4"
+            android:textAllCaps="false"
+            android:textColor="@color/c_242323"
+            android:textSize="14sp" />
 
     </LinearLayout>
 </ScrollView>

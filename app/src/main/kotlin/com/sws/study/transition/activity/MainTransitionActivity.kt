@@ -23,6 +23,8 @@ class MainTransitionActivity : ComponentActivity(), View.OnClickListener {
         findViewById<View>(R.id.bt_anim_difference).setOnClickListener(this)
         findViewById<View>(R.id.bt_motion_layout_1).setOnClickListener(this)
         findViewById<View>(R.id.bt_motion_layout_2).setOnClickListener(this)
+        findViewById<View>(R.id.bt_motion_layout_3).setOnClickListener(this)
+        findViewById<View>(R.id.bt_motion_layout_4).setOnClickListener(this)
 
     }
 
@@ -31,10 +33,18 @@ class MainTransitionActivity : ComponentActivity(), View.OnClickListener {
         when (v.id) {
             R.id.bt_anim_difference -> {
                 router(TransitionAnimDifferenceActivity::class.java)
-            }  R.id.bt_motion_layout_1 -> {
+            }
+            R.id.bt_motion_layout_1 -> {
                 router(MotionLayoutUse1Activity::class.java)
-            } R.id.bt_motion_layout_2 -> {
+            }
+            R.id.bt_motion_layout_2 -> {
                 router(MotionLayoutUse2Activity::class.java)
+            }
+            R.id.bt_motion_layout_3 -> {
+                router(MotionLayoutUse3Activity::class.java)
+            }
+            R.id.bt_motion_layout_4 -> {
+                router(MotionLayoutUse4Activity::class.java)
             }
         }
     }

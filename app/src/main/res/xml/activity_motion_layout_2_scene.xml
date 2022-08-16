@@ -9,7 +9,6 @@
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
         motion:duration="1000">
-        <KeyFrameSet></KeyFrameSet>
 
         <!--        <OnSwipe-->
         <!--            motion:dragDirection="dragDown"-->
