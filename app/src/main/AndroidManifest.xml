@@ -53,6 +53,7 @@
         <activity android:name=".transition.activity.MainTransitionActivity" />
         <activity android:name=".transition.activity.TransitionAnimDifferenceActivity" />
         <activity android:name=".transition.activity.MotionLayoutUse1Activity" />
+        <activity android:name=".transition.activity.MotionLayoutUse2Activity" />
     </application>
 
 </manifest>

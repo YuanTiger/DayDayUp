@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+
+    <!-- 动画声明-->
+    <!-- motionInterpolator：整个动画的插值器-->
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <KeyFrameSet></KeyFrameSet>
+
+        <!--        <OnSwipe-->
+        <!--            motion:dragDirection="dragDown"-->
+        <!--            motion:touchAnchorSide="bottom" />-->
+
+        <OnClick />
+
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint android:id="@+id/view_test">
+
+            <!--pathMotionArc:指定开始的运动轨迹-->
+            <!--transitionEasing:指定动画插值器，和motionInterpolator搭配会出现插值重合的问题-->
+            <Motion motion:pathMotionArc="startVertical" />
+
+            <Layout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintTop_toTopOf="parent" />
+
+
+            <!-- 自定义属性，回去调用该变量的set函数，本质上就是属性动画的使用-->
+            <!-- start、end动画都需要对应添加值-->
+            <CustomAttribute
+                motion:attributeName="saturation"
+                motion:customFloatValue="1" />
+
+
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint android:id="@+id/view_test">
+
+            <Layout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent" />
+
+            <Transform
+                android:rotation="360"
+                android:scaleX="1.5"
+                android:scaleY="1.5" />
+
+
+            <CustomAttribute
+                motion:attributeName="saturation"
+                motion:customFloatValue="0" />
+
+        </Constraint>
+
+    </ConstraintSet>
+</MotionScene>
