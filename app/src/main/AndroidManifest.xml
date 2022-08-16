@@ -56,6 +56,7 @@
         <activity android:name=".transition.activity.MotionLayoutUse2Activity" />
         <activity android:name=".transition.activity.MotionLayoutUse3Activity" />
         <activity android:name=".transition.activity.MotionLayoutUse4Activity" />
+        <activity android:name=".transition.activity.MotionLayoutUse5Activity" />
     </application>
 
 </manifest>

@@ -25,6 +25,7 @@ class MainTransitionActivity : ComponentActivity(), View.OnClickListener {
         findViewById<View>(R.id.bt_motion_layout_2).setOnClickListener(this)
         findViewById<View>(R.id.bt_motion_layout_3).setOnClickListener(this)
         findViewById<View>(R.id.bt_motion_layout_4).setOnClickListener(this)
+        findViewById<View>(R.id.bt_motion_layout_5).setOnClickListener(this)
 
     }
 
@@ -45,6 +46,8 @@ class MainTransitionActivity : ComponentActivity(), View.OnClickListener {
             }
             R.id.bt_motion_layout_4 -> {
                 router(MotionLayoutUse4Activity::class.java)
+            }  R.id.bt_motion_layout_5 -> {
+                router(MotionLayoutUse5Activity::class.java)
             }
         }
     }
