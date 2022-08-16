@@ -16,7 +16,7 @@ class MotionLayoutUse1Activity : ComponentActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_motionlayout_1)
+        setContentView(R.layout.activity_motion_layout_1)
 
 
     }
