@@ -9,7 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="c_ffcc45">#ffcc45</color>
     <color name="c_242323">#242323</color>
+    <color name="c_999999">#999999</color>
     <color name="c_9a2322">#9a2322</color>
     <color name="c_0091ff">#0091ff</color>
+    <color name="c_ffd600">#FFD600</color>
     <color name="c_80000000">#80000000</color>
 </resources>

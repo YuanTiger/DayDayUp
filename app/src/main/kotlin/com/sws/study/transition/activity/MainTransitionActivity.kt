@@ -21,6 +21,7 @@ class MainTransitionActivity : ComponentActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main_transition)
 
         findViewById<View>(R.id.bt_anim_difference).setOnClickListener(this)
+        findViewById<View>(R.id.bt_motion_layout_1).setOnClickListener(this)
 
     }
 
@@ -29,6 +30,8 @@ class MainTransitionActivity : ComponentActivity(), View.OnClickListener {
         when (v.id) {
             R.id.bt_anim_difference -> {
                 router(TransitionAnimDifferenceActivity::class.java)
+            }  R.id.bt_motion_layout_1 -> {
+                router(MotionLayoutUse1Activity::class.java)
             }
         }
     }
