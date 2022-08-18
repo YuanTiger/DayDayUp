@@ -10,14 +10,15 @@
         motion:duration="500">
         <!--  点击开始动画-->
         <!--  clickAction：动画模式-->
+        <!--  targetId：指定支持点击的控件，不指定点击全屏都可以-->
         <!--        <OnClick-->
         <!--            motion:clickAction="toggle"-->
         <!--            motion:targetId="@+id/image_film_cover" />-->
 
         <!--  页面支持滑动-->
-        <!--  dragDirection:指定滑动方向，默认是反着的 -->
+        <!--  dragDirection:指定滑动方向，默认是反着的，一般都会设置为dragDown -->
         <!--  touchRegionId:指定支持滑动的View，默认是全屏都支持滑动 -->
-        <!--  onTouchUp:抬起时的行为，默认为autoComplete，自动计算开始状态还是结束状态,stop为抬手后保持不变 -->
+        <!--  onTouchUp:抬起时的行为，默认为autoComplete-自动计算开始状态还是结束状态,改为stop是抬手后保持不变 -->
         <OnSwipe
             motion:dragDirection="dragDown"
             motion:onTouchUp="autoComplete"
