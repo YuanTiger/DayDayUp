@@ -1,5 +1,6 @@
 package com.my.plugin
 
+import com.android.build.gradle.BaseExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
@@ -9,7 +10,7 @@ import org.gradle.api.Project
  * @e-mail mengyuanzz@126.com
  * -----------
  */
- class HenCoderPlugin implements Plugin<Project> {
+class HenCoderPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
@@ -18,6 +19,10 @@ import org.gradle.api.Project
         project.afterEvaluate {
             println "Hello ${extension.name}"
         }
+
+//        def transform = new HenCoderTransform()
+//        def baseExtension = project.extensions.getByType(BaseExtension)
+//        baseExtension.registerTransform(transform)
 
     }
 }

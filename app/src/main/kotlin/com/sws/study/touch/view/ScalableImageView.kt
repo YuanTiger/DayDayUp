@@ -29,7 +29,7 @@ private val IMAGE_SIZE = 300.dp
 
 private const val EXTRA_SCALE_FACTOR = 1.5F
 
-class ScalableImageView(context: Context?, attrs: AttributeSet?) : View(context, attrs) {
+class ScalableImageView(context: Context, attrs: AttributeSet?) : View(context, attrs) {
 
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
@@ -124,7 +124,7 @@ class ScalableImageView(context: Context?, attrs: AttributeSet?) : View(context,
     }
 
 
-    override fun onTouchEvent(event: MotionEvent?): Boolean {
+    override fun onTouchEvent(event: MotionEvent): Boolean {
         scaleGestureDetector.onTouchEvent(event)
         //如果已经被双指缩放接管，则不再处理双击放大
         if (!scaleGestureDetector.isInProgress) {
