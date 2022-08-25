@@ -45,6 +45,13 @@ android {
     }
 }
 
+//打印所有的Task
+gradle.taskGraph.whenReady {
+    it.allTasks.each{
+        task -> println "AllTask---${task.name}:::${task.class.name-'_Decorated'}"
+    }
+}
+
 dependencies {
 
     implementation "androidx.core:core-ktx:$ktxVersion"
