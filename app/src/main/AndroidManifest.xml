@@ -25,6 +25,7 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".AnnotationTestActivity" />
         <activity android:name=".customview.activity.MainCustomViewActivity" />
         <activity android:name=".customview.activity.SectorActivity" />
         <activity android:name=".customview.activity.ClipActivity" />

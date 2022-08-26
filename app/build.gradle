@@ -1,6 +1,10 @@
 apply plugin: 'com.android.application'
 apply plugin: 'org.jetbrains.kotlin.android'
 apply plugin: 'com.hencoder'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+
 
 testPlugin {
     name 'Yuan.Meng'
@@ -46,13 +50,16 @@ android {
 }
 
 //打印所有的Task
-gradle.taskGraph.whenReady {
-    it.allTasks.each{
-        task -> println "AllTask---${task.name}:::${task.class.name-'_Decorated'}"
-    }
-}
+//gradle.taskGraph.whenReady {
+//    it.allTasks.each{
+//        task -> println "AllTask---${task.name}:::${task.class.name-'_Decorated'}"
+//    }
+//}
 
 dependencies {
+    implementation project(':lib-reflection')
+    annotationProcessor project(':lib-processor')
+    kapt project(':lib-processor')
 
     implementation "androidx.core:core-ktx:$ktxVersion"
     implementation "androidx.compose.ui:ui:$compose_version"

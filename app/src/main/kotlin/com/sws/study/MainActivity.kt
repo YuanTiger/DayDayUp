@@ -2,7 +2,6 @@ package com.sws.study
 
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.sws.study.anim.activity.MainAnimActivity
 import com.sws.study.customview.activity.MainCustomViewActivity
@@ -30,6 +29,7 @@ class MainActivity : ComponentActivity(), View.OnClickListener {
         findViewById<View>(R.id.bt_touch).setOnClickListener(this)
         findViewById<View>(R.id.bt_thread).setOnClickListener(this)
         findViewById<View>(R.id.bt_transition).setOnClickListener(this)
+        findViewById<View>(R.id.bt_annotation).setOnClickListener(this)
 
     }
 
@@ -49,6 +49,9 @@ class MainActivity : ComponentActivity(), View.OnClickListener {
             }
             R.id.bt_transition -> {
                 router(MainTransitionActivity::class.java)
+            }
+            R.id.bt_annotation -> {
+                router(AnnotationTestActivity::class.java)
             }
             else -> {
                 toastShow("not found")

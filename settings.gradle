@@ -1,3 +1,6 @@
 
 rootProject.name = "DayDayUp"
 include ':app'
+include ':lib-reflection'
+include ':lib-processor'
+include ':lib-annotations'
