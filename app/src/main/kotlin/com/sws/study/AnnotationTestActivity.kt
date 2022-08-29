@@ -27,6 +27,7 @@ class AnnotationTestActivity : ComponentActivity() {
         MyBinding.binding(this)
         tvText!!.text = "use code set content"
     }
+
 }
 
 

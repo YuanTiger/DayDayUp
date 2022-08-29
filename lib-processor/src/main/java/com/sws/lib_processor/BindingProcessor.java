@@ -83,7 +83,6 @@ public class BindingProcessor extends AbstractProcessor {
     @Override
     public Set<String> getSupportedAnnotationTypes() {
         System.out.println("BindingProcessor：getSupportedAnnotationTypes");
-
         return Collections.singleton(MyBindView.class.getCanonicalName());
     }
 }
