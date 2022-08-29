@@ -1,4 +1,4 @@
-package com.sws.lib_processor;
+package com.sws.lib_processor
 
 import com.squareup.javapoet.ClassName
 import com.squareup.javapoet.MethodSpec
@@ -60,8 +60,8 @@ class BindingProcessorKt : AbstractProcessor() {
                         "activity"
                     )
             var hasBinding = false
-            for (enclosedElement in element.getEnclosedElements()) {
-                if (enclosedElement.getKind() == ElementKind.FIELD) {
+            for (enclosedElement in element.enclosedElements) {
+                if (enclosedElement.kind == ElementKind.FIELD) {
                     val bindView: MyBindView? =
                         enclosedElement.getAnnotation(MyBindView::class.java)
                     if (bindView != null) {
