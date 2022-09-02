@@ -1,10 +1,12 @@
-package com.sws.study
+package com.sws.study.annotation
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import com.sws.annotations.MyBindView
 import com.sws.reflection.MyBinding
+import com.sws.study.R
 
 /**
  * @author mengyuan
@@ -14,6 +16,10 @@ import com.sws.reflection.MyBinding
  * 自定义注解测试
  */
 class AnnotationTestActivity : ComponentActivity() {
+
+    companion object {
+        const val TAG = "AnnotationTestActivity_"
+    }
 
     @JvmField
     @MyBindView(R.id.tv_text)
@@ -26,6 +32,7 @@ class AnnotationTestActivity : ComponentActivity() {
 //        binding(this)
         MyBinding.binding(this)
         tvText!!.text = "use code set content"
+
     }
 
 }

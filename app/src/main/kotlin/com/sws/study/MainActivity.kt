@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.ComponentActivity
 import com.sws.study.anim.activity.MainAnimActivity
+import com.sws.study.annotation.AnnotationTestActivity
 import com.sws.study.customview.activity.MainCustomViewActivity
+import com.sws.study.generics.TestViewModelActivity
 import com.sws.study.thread.activity.MainThreadActivity
 import com.sws.study.touch.activity.MainTouchActivity
 import com.sws.study.transition.activity.MainTransitionActivity
@@ -51,7 +53,8 @@ class MainActivity : ComponentActivity(), View.OnClickListener {
                 router(MainTransitionActivity::class.java)
             }
             R.id.bt_annotation -> {
-                router(AnnotationTestActivity::class.java)
+//                router(AnnotationTestActivity::class.java)
+                router(TestViewModelActivity::class.java)
             }
             else -> {
                 toastShow("not found")

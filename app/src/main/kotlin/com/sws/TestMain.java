@@ -10,6 +10,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 import okio.Buffer;
 import okio.BufferedSink;
@@ -139,5 +144,25 @@ public class TestMain {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        int result = testGeneric(1);
     }
+
+    private static <E> E  testGeneric(E name){
+//        ArrayList<? super String> list = new ArrayList<Object>();
+//        list.add(Integer.valueOf(1));
+//        list.add("123123");
+//        String a = list.get(0);
+        return name;
+    }
+
+
+    private static <E extends Runnable & Serializable> void someMethod(E params){
+
+    }
+
+    private static <P> void merge(P item1, List<P> item2){
+
+    }
+
 }
